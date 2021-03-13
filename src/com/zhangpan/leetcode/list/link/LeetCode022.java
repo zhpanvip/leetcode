@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode.list;
+package com.zhangpan.leetcode.list.link;
 
 public class LeetCode022 {
     public ListNode getKthFromEnd(ListNode head, int k) {

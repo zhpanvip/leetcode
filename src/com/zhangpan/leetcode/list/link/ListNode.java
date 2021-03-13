@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode.list;
+package com.zhangpan.leetcode.list.link;
 
 public class ListNode {
     public int val;

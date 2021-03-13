@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode;
+package com.zhangpan.leetcode.tree;
 
 import java.util.ArrayList;
 import java.util.List;

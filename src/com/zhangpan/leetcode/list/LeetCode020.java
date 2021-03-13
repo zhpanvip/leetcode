@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode;
+package com.zhangpan.leetcode.list;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -34,7 +34,7 @@ import java.util.LinkedList;
  * 输入：s = "{[]}"
  * 输出：true
  */
-public class LeetCode20 {
+public class LeetCode020 {
     public boolean isValid(String s) {
         int length = s.length();
         if (length % 2 == 1) {

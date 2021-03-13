@@ -1,13 +1,13 @@
 package com.zhangpan.leetcode.list.reverse;
 
 
-import com.zhangpan.leetcode.list.ListNode;
+import com.zhangpan.leetcode.list.link.ListNode;
 
 /**
  * 反转链表前 N 个节点
  * LeetCode第206题的扩展
  */
-public class LeetCode206$ {
+public class LeetCode92$ {
 
     public static ListNode cursor;
 

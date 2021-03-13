@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode;
+package com.zhangpan.leetcode.tree;
 
 public class TreeNode {
     int val;
