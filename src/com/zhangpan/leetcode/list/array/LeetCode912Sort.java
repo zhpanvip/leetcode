@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode;
+package com.zhangpan.leetcode.list;
 
 /**
  * 912. 排序数组

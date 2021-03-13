@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode;
+package com.zhangpan.leetcode.list;
 
 /**
  * 二分查找

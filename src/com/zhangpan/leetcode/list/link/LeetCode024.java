@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode;
+package com.zhangpan.leetcode.list;
 
 /**
  * 给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
@@ -25,7 +25,7 @@ package com.zhangpan.leetcode;
  * 链接：https://leetcode-cn.com/problems/swap-nodes-in-pairs
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class LeetCode24 {
+public class LeetCode024 {
     public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) {
             return head;

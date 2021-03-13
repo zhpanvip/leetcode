@@ -1,8 +1,8 @@
-package com.zhangpan.leetcode;
+package com.zhangpan.leetcode.list;
 
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
     ListNode() {
     }

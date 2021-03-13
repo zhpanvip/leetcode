@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode;
+package com.zhangpan.leetcode.list;
 
 /**
  * 给定一个整数数组 nums，求出数组从索引i到j（i≤j）范围内元素的总和，包含i、j两点。
