@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode.list.array;
+package com.zhangpan.leetcode.list.array.binarysearch;
 
 /**
  * 二分查找
@@ -8,7 +8,7 @@ package com.zhangpan.leetcode.list.array;
  * 链接：https://leetcode-cn.com/problems/binary-search
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class LeetCode704BinarySearch {
+public class LeetCode704 {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 20, 25, 30, 44, 62};
