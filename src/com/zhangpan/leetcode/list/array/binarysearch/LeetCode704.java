@@ -19,7 +19,7 @@ public class LeetCode704 {
     public static int binSearch(int[] arr, int key) {
         int left = 0;
         int right = arr.length - 1;
-        int mid;
+        int mid = 0;
         while (left <= right) {
             mid = (left + right) >> 1;
             if (key < arr[mid]) {
@@ -30,38 +30,37 @@ public class LeetCode704 {
                 return mid;
             }
         }
-        return -1;
+        return ~mid;
     }
 
+    //    public static int binSearch(int[] array, int key) {
+    //        int left = 0;
+    //        int right = array.length - 1;
+    //        int mid;
+    //        while (left <= right) {
+    //            mid = (left + right) >> 1;
+    //            if (key < array[mid]) {
+    //                right = mid - 1;
+    //            } else if (key > array[mid]) {
+    //                left = mid + 1;
+    //            } else if (key == array[mid]) {
+    //                return mid;
+    //            }
+    //        }
+    //        return -1;
+    //    }
 
-//    public static int binSearch(int[] array, int key) {
+//    public static int binSearch1(int[] array, int key) {
 //        int left = 0;
 //        int right = array.length - 1;
-//        int mid;
-//        while (left <= right) {
-//            mid = (left + right) >> 1;
+//        int mid = 0;
+//        while (left < right) {
+//            mid = left + right >> 1;
 //            if (key < array[mid]) {
 //                right = mid - 1;
 //            } else if (key > array[mid]) {
 //                left = mid + 1;
-//            } else if (key == array[mid]) {
-//                return mid;
-//            }
-//        }
-//        return -1;
-//    }
-
-//    public static int binSearch(int[] array, int key) {
-//        int left = 0;
-//        int right = array.length - 1;
-//        int mid;
-//        while (right >= left) {
-//            mid = (right + left) >>1;
-//            if (key < array[mid]) {
-//                right = mid - 1;
-//            } else if (key > array[mid]) {
-//                left = mid + 1;
-//            } else if (key == array[mid]) {
+//            } else {
 //                return mid;
 //            }
 //        }

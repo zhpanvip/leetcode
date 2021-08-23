@@ -38,31 +38,31 @@ import java.util.Map;
  */
 public class LeetCode001 {
 
-    public static void main(String[] args){
-        int[] ints = twoSum(new int[]{2, 7, 11, 15}, 9);
-    }
+  public static void main(String[] args) {
+    int[] ints = twoSum(new int[] { 2, 7, 11, 15 }, 9);
+  }
 
-    public static int[] twoSum(int[] nums, int target) {
-        for (int i = 0; i < nums.length; i++) {
-            int result = target - nums[i];
-            for (int j = i+1; j < nums.length; j++) {
-                if (nums[j] == result) {
-                    return new int[]{i,j};
-                }
-            }
+  public static int[] twoSum(int[] nums, int target) {
+    for (int i = 0; i < nums.length; i++) {
+      int result = target - nums[i];
+      for (int j = i + 1; j < nums.length; j++) {
+        if (nums[j] == result) {
+          return new int[] { i, j };
         }
-        return null;
+      }
     }
+    return null;
+  }
 
-    public static int[] twoSum1(int[] nums, int target) {
-        Map<Integer,Integer> map= new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            if(map.containsKey(target-nums[i])){
-                return new int[]{map.get(target-nums[i]),i};
-            }
-            map.put(nums[i],i);
-        }
-        return null;
+  public static int[] twoSum1(int[] nums, int target) {
+    Map<Integer, Integer> map = new HashMap<>();
+    for (int i = 0; i < nums.length; i++) {
+      if (map.containsKey(target - nums[i])) {
+        return new int[] { map.get(target - nums[i]), i };
+      }
+      map.put(nums[i], i);
     }
+    return null;
+  }
 
 }

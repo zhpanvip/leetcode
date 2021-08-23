@@ -13,7 +13,7 @@ package com.zhangpan.leetcode.list.array;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class LeetCode303 {
-    int[] sums;
+    private final int[] sums;
 
     public LeetCode303(int[] nums) {
         int n = nums.length;
@@ -27,15 +27,19 @@ public class LeetCode303 {
         return sums[j + 1] - sums[i];
     }
 
-//    public LeetCode303(int[] nums) {
-//        this.nums=nums;
-//    }
-//
-//    public int sumRange(int i, int j) {
-//        int sum=0;
-//        for(int n=i;n<=j;n++){
-//            sum+=nums[n];
-//        }
-//        return sum;
-//    }
+    //private final int[] nums;
+    //public NumArray(int[] nums) {
+    //    this.nums=nums;
+    //}
+    //
+    //public int sumRange(int left, int right) {
+    //    if(nums==null){
+    //        return 0;
+    //    }
+    //    int sum = 0;
+    //    for(;left<=right;left++){
+    //        sum += nums[left];
+    //    }
+    //    return sum;
+    //}
 }

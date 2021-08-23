@@ -2,7 +2,7 @@ package com.zhangpan.leetcode.list.array;
 
 /**
  * 912. 排序数组
- * 给你一个整数数组 nums，请你将该数组升序排列。
+ * 给你一个整数数组nums，请你将该数组升序排列。
  * <p>
  *  
  * <p>
@@ -92,4 +92,37 @@ public class LeetCode912Sort {
         nums[j] = temp;
         return nums;
     }
+//
+//    public static void bubbleSort1(int[] nums) {
+//        for (int i = 0; i < nums.length; i++) {
+//            for (int j = 0; j < nums.length - i - 1; j++) {
+//                if (nums[j] > nums[j + 1]) {
+//                    swap(nums, j, j + 1);
+//                }
+//            }
+//        }
+//    }
+//
+//    public static void quickSort1(int[] nums, int left, int right) {
+//        if (nums.length <= 1 || left >= right) {
+//            return;
+//        }
+//        int key = nums[left];
+//        int l = left;
+//        int r = right;
+//        while (l < r) {
+//            while (nums[r] >= key && l < r) {
+//                r--;
+//            }
+//            while (nums[l] <= key && l < r) {
+//                l++;
+//            }
+//            if (l < r) {
+//                swap(nums, l, r);
+//            }
+//        }
+//        swap(nums, left, l);
+//        quickSort1(nums, left, l - 1);
+//        quickSort1(nums, l + 1, right);
+//    }
 }
