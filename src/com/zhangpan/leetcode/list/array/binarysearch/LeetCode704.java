@@ -21,7 +21,9 @@ public class LeetCode704 {
         int right = arr.length - 1;
         int mid = 0;
         while (left <= right) {
-            mid = (left + right) >> 1;
+            // 如果left与right都超过了int最大值的1/2,那么（left+right）会发生溢出，
+            // 因此不能使用(left+right)/2求mid,而是应该用left+(right-left)/2
+            mid = left + (right - left) / 2;
             if (key < arr[mid]) {
                 right = mid - 1;
             } else if (key > arr[mid]) {
