@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode.list.array.binarysearch;
+package com.zhangpan.leetcode.search;
 
 /**
  * 278. 第一个错误的版本

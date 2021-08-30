@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode.list.array.binarysearch;
+package com.zhangpan.leetcode.search;
 
 /**
  * 剑指 Offer 53 - II. 0～n-1中缺失的数字

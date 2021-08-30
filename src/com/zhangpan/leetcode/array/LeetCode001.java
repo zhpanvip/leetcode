@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode.list.array;
+package com.zhangpan.leetcode.array;
 
 import java.util.HashMap;
 import java.util.Map;

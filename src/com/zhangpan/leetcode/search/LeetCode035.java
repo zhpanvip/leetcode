@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode.list.array.binarysearch;
+package com.zhangpan.leetcode.search;
 
 /**
  * 35. 搜索插入位置
