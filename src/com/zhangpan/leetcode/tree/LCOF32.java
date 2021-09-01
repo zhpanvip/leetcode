@@ -34,7 +34,7 @@ import java.util.Queue;
  * <p>
  * https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/
  */
-public class LeetCodeOffer32 {
+public class LCOF32 {
 
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> resultList = new ArrayList<>();

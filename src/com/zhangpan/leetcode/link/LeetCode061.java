@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode.list.link;
+package com.zhangpan.leetcode.link;
 
 /**
  * 给定一个链表，旋转链表，将链表每个节点向右移动k个位置，其中k是非负数。

@@ -1,6 +1,6 @@
-package com.zhangpan.leetcode.list.reverse;
+package com.zhangpan.leetcode.link.reverse;
 
-import com.zhangpan.leetcode.list.link.ListNode;
+import com.zhangpan.leetcode.link.ListNode;
 
 /**
  * 反转从位置 m 到 n 的链表。请使用一趟扫描完成反转。

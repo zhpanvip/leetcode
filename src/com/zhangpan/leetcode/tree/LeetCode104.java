@@ -1,7 +1,5 @@
 package com.zhangpan.leetcode.tree;
 
-import com.zhangpan.leetcode.list.link.ListNode;
-
 import java.util.*;
 
 /**

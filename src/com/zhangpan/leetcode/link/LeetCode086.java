@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode.list.link;
+package com.zhangpan.leetcode.link;
 
 /**
  * 86. 分隔链表

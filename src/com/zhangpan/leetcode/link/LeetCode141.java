@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode.list.link;
+package com.zhangpan.leetcode.link;
 
 import java.util.HashSet;
 

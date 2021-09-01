@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode.list;
+package com.zhangpan.leetcode.string;
 
 import java.util.HashMap;
 import java.util.LinkedList;

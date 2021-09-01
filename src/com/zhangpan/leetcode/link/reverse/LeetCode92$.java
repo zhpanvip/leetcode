@@ -1,7 +1,7 @@
-package com.zhangpan.leetcode.list.reverse;
+package com.zhangpan.leetcode.link.reverse;
 
 
-import com.zhangpan.leetcode.list.link.ListNode;
+import com.zhangpan.leetcode.link.ListNode;
 
 /**
  * 反转链表前 N 个节点
