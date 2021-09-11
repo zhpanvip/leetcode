@@ -29,9 +29,8 @@ public class LeetCode104 {
     public int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
-        } else {
-            return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
         }
+        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 
     /**
@@ -41,24 +40,22 @@ public class LeetCode104 {
         if (root == null) {
             return 0;
         }
+        int maxSize = 0;
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
-        int level = 0;
         while (!queue.isEmpty()) {
-            int n = queue.size();
-            for (int i = 0; i < n; i++) {
+            int levelSize = queue.size();
+            for (int i = 0; i < levelSize; i++) {
                 TreeNode node = queue.poll();
-                if (node != null) {
-                    if (node.left != null) {
-                        queue.offer(node.left);
-                    }
-                    if (node.right != null) {
-                        queue.offer(node.right);
-                    }
+                if (node.left != null) {
+                    queue.offer(node.left);
+                }
+                if (node.right != null) {
+                    queue.offer(node.right);
                 }
             }
-            level++;
+            maxSize++;
         }
-        return level;
+        return maxSize;
     }
 }

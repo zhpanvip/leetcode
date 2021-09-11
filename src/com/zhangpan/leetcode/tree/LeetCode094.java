@@ -1,6 +1,7 @@
 package com.zhangpan.leetcode.tree;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 
@@ -78,5 +79,32 @@ public class LeetCode094 {
             cur = leftNode.right;
         }
         return results;
+    }
+
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        if(root == null){
+            return result;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode node = root,right = null;
+
+        while(node != null || !stack.isEmpty()){
+            if(node != null){
+                stack.push(node);
+                node = node.left;
+            } else {
+                node = stack.peek();
+                if(node.right != null && node.right != right){
+                    node = node.right;
+                } else {
+                    result.add(node.val);
+                    right = node;
+                    stack.pop();
+                    node = null;
+                }
+            }
+        }
+        return result;
     }
 }
