@@ -52,6 +52,26 @@ public class LeetCode283 {
         moveZeroes(a);
     }
 
+//    public static void moveZeroes(int[] nums) {
+//        int j = 0;
+//        for (int i = 0; i < nums.length; i++) {
+//            if (nums[i] != 0) {
+//                nums[j] = nums[i];
+//                j++;
+//            }
+//        }
+//
+//        for (int i = j; i < nums.length; i++) {
+//            nums[i] = 0;
+//        }
+//    }
+
+    /**
+     * 用两个指针同时从0位置开始移动，一个快指针为i,一个慢指针j。快指针每次都移动，慢指针只有在指向的位置不等于0的时候
+     * 才移动一次，并将快指针指向的值赋值给慢指针的位置。这样当快指针j指向数组最后一个元素的时候，慢指针i指向位置之后的
+     * 所有元素都应该是0，因此，从慢指针i的位置开始遍历，将所有值改为0。
+     *
+     */
     public static void moveZeroes(int[] nums) {
         int j = 0;
         for (int i = 0; i < nums.length; i++) {

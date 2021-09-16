@@ -47,6 +47,11 @@ public class LeetCode167 {
 //        return result;
 //    }
 
+    /**
+     * 由于是一个有序数组，因此可以使用双指针，一个指针指向数组头，另一个指针指向数组尾。如果两个指针位置的元素相加小于target
+     * 那么就让左指针向右移动一次，如果相加之和大于target，则让右指针向左移动一次，如果相加等于target，则返回向指针的位置即可。
+     * 边界条件是左指针小于右指针
+     */
     public int[] twoSum(int[] numbers, int target) {
         int p1 = 0, p2 = numbers.length - 1;
         while (p1 <= p2) {
