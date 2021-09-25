@@ -1,4 +1,4 @@
-package com.zhangpan.leetcode.link.reverse;
+package com.zhangpan.leetcode.link;
 
 import com.zhangpan.leetcode.link.ListNode;
 
