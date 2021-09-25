@@ -80,4 +80,47 @@ public class LeetCode206 {
 //        head.next = null;
 //        return p2;
 //    }
+
+    public static ListNode reverseLink1(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode p1 = head, p2 = head.next, p3 = p2.next;
+        while (p2 != null) {
+            p2.next = p1;
+            p1 = p2;
+            p2 = p3;
+            p3 = p2.next;
+        }
+        return p1;
+    }
+
+
+    public static ListNode reverseList(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode p1 = head;
+        ListNode p2 = p1.next;
+        ListNode p3;
+        while (p2 != null) {
+            p3 = p2.next;
+            p2.next = p1;
+            p1 = p2;
+            p2 = p3;
+        }
+        head.next = null;
+        return p1;
+    }
+
+    public static ListNode reverse(ListNode head){
+        if (head==null||head.next == null) {
+            return head;
+        }
+        // 返回最后一个节点
+        ListNode lastNode = reverse(head.next);
+        head.next.next = head;
+        head.next = null;
+        return lastNode;
+    }
 }
