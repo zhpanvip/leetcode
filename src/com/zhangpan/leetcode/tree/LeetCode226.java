@@ -27,6 +27,8 @@ package com.zhangpan.leetcode.tree;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class LeetCode226 {
+
+    // 从子节点开始交换
     public TreeNode invertTree(TreeNode root) {
         if (root == null) {
             return null;
@@ -35,6 +37,17 @@ public class LeetCode226 {
         TreeNode rightNode = invertTree(root.right);
         root.left = rightNode;
         root.right = leftNode;
+        return root;
+    }
+
+    // 从父节点开始交换
+    public TreeNode invertTree2(TreeNode root) {
+        if (root == null) return null;
+        TreeNode node = root.right;
+        root.right = root.left;
+        root.left = node;
+        invertTree(root.left);
+        invertTree(root.right);
         return root;
     }
 }
