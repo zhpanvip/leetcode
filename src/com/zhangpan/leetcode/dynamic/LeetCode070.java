@@ -29,7 +29,7 @@ import java.util.HashMap;
  * 链接：https://leetcode-cn.com/problems/climbing-stairs
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class LeetCode70 {
+public class LeetCode070 {
 
     HashMap<Integer, Integer> map = new HashMap<>();
 
@@ -67,9 +67,12 @@ public class LeetCode70 {
      */
     public int climbStairs2(int n) {
         int[] dp = new int[n + 1];
+        // 0阶有1种走法
         dp[0] = 1;
+        // 1阶1种走法
         dp[1] = 1;
         for (int i = 2; i <= n; i++) {
+            // 到达第i阶可能是一步到达，也可能是两步到达，因此到第i阶的走法应该是i-1和i-2的总和。
             dp[i] = dp[i - 1] + dp[i - 2];
         }
         return dp[n];
