@@ -15,7 +15,7 @@ import java.util.Stack;
  * 输出： 4
  * 说明：
  * <p>
- * 给定的 k 保证是有效的。
+ * 给定的 k保证是有效的。
  * <p>
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci

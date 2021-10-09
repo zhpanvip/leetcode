@@ -9,7 +9,7 @@ import java.util.HashSet;
  * 链接：https://leetcode-cn.com/problems/linked-list-cycle-lcci
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class LeetCode0208 {
+public class LCOF0208 {
     /**
      * 使用HashSet存储Node,对比node是否在HashSet中存在
      */
